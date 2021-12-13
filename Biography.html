@@ -57,7 +57,7 @@ footer {
     <div class="topnav">
         <a href="#home">Home</a>
         <a class ="active" href="#news">Biography</a>
-        <a href="#contact">Testimonies</a>
+        <a href="file:///C:/Users/10024185/Desktop/Website%20Project/MillardMagic2/StudentTestimonies.html">Testimonies</a>
         <a href="#about">Quiz</a>
       </div>
     <div class="header">
@@ -111,5 +111,19 @@ footer {
     <h3> W/Thu: 3:00 - 4:00</h3>
     <h3> Phone Number: (510) 796 - 1776 ext 57256</h3>
   </footer>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
     </body>
 </html>
