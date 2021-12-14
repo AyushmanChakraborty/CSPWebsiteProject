@@ -1,6 +1,7 @@
 .topnav {
     overflow: hidden;
     background-color: black;
+    font-family: "American Typewriter, serif";
   }
   
   .topnav a {
@@ -10,17 +11,20 @@
     padding: 25px 20px;
     text-decoration: none;
     font-size: 20px;
+    font-family: "American Typewriter, serif";
   }
   
   .topnav a:hover {
     background-color: black;
     color: rgb(99, 153, 99);
+    font-family: "American Typewriter, serif";
   }
   
   .topnav a.active {
     background-color: white;
     color: rgb(99, 153, 99);
+    font-family: "American Typewriter, serif";
       }
 
-   
+
   
