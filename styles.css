@@ -1,22 +1,17 @@
-body, html {
-  font-size: 28px;
-  height: 150%
-}
-
 Nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: -webkit-sticky; 
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
 li {
   float: left;
-  border-right:1px solid #bbb;
+  border-right: 1px solid #bbb;
 }
 
 li a {
@@ -25,7 +20,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium'
+  font-family: "American Typewriter, Serif";
 }
 
 li a:hover {
@@ -33,12 +28,14 @@ li a:hover {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
+
 footer {
   text-align: center;
   padding: 50px;
   background-color: black;
   color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
