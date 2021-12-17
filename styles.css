@@ -1,8 +1,12 @@
-* {box-sizing: border-box}
-body {font-family: cursive;}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+}
 
 .navbar {
-  top: 0; 
+  top: 0;
   width: 100%;
   background-color: midnightblue;
   overflow: auto;
@@ -16,10 +20,10 @@ body {font-family: cursive;}
   color: white;
   text-decoration: none;
   font-size: 30px;
-  width: 25%; /* Four links of equal widths */
+  width: 20%; /* Four links of equal widths */
   text-align: center;
   border-right: 1px solid #bbb;
-  font-weight: 800; 
+  font-weight: 800;
 }
 
 .navbar a:hover {

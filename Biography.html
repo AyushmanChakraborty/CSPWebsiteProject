@@ -9,6 +9,7 @@
     <style>
         body {
           background-color: whitesmoke;
+          color:midnightblue;
         }
         
         h1 {
@@ -18,42 +19,25 @@
         } 
 
         h2 {
-         color: rgb(99, 131, 99);
-        }
-        .p1 {
-     font-family: "American Typewriter, serif";
-     font-size: large;         
-        }
-        .p2 {
-         font-family:"American Typewriter, serif";  
-         font-size: large;    
-        }
-        .p3 {
-            font-family: "American Typewriter, serif";
-            font-size: large;
-        }
-        .p4 {
-            font-family: "American Typewriter, serif";
-            font-size: large;
+         color: midnightblue;
         }
         .header {
-  padding: 60px;
-  text-align: center;
-  background: rgb(99, 131, 99);
-  color: white;
-  font-size: 30px;
-}
-
-
-        </style>
+            padding: 60px;
+            text-align: center;
+            background: rgb(168, 104, 221);
+            color: white;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-  <Nav>
-    <li><a  href="home.html">Home</a></li>
-    <li><a class="active" href="Biography">Biography</a></li>
-    <li><a href="studenttestimonies.html" >Testimony</a></li>
-    <li><a href="quiz">Quiz</a></li>
-    </Nav>
+    <div class="navbar">
+        <a href="Homepage.html">Home</a> 
+        <a class="active" href=Biography>Biography</a> 
+        <a href="Testimonies">Testimonies</a> 
+        <a href="Quiz">Quiz</a>
+        <a href="Store">Store</a>
+      </div>
     <div class="header">
         <h1>Biography</h1>
       </div>
@@ -89,14 +73,17 @@
         Wheaton. he also advise the Engineering Club, the Computer Science Club, Girls Who Code, the AI Club,
         the Technology Students Association, and the FTC Robotics Competition team.
      </p>
-     <h2> His Life </h2>
-     <p class ="p2">As a child, Mr. Milard was very sweet, and well-behaved. He loved to sing, but as he says it, "not well". He joked that "he was told to insure his voice, but then a music lover went for his throat." Mr. Millard's favorite song was "Yesterday" by the beatles. Academically, he was a very good student. He experienced a bit of a bump in freshman year of high school, but then went back to being a good student. He loved science, especially astrophysics and geology (although he would never take these in college). He visited many countries, but his favorite visit was Italy. Mr. Millard is not a big sports fan, but he was a wrestler. He did not go proffessional (obviously, as he is with us now) and did not enjoy it very much. He was also a swimmer. Infact, he set the local record for backstroke. Mr. Millard does not like butterfly however. He said that "the founder of butterfly made butterfly so that people could drown." There were six kids in his household, five boys and one girl. He called them the quick and the hungry. </p>
-<h2>The Creator of the American High Computer Science Department</h2>
-<p class = "p4">Mr. Millard originally was a chemistry teacher when he first began at American High School. However, he would come to hear that the students wanted a CS program. He convinced the board to teach engineering and started introduction to electronic design. IED which is taught by Mr. Lindsay now, would be the first class Mr. Millard would create for American High School. He would then move to a Digital Engineering class, and then to a class called Software Engineering. Fun Fact: Software Engineering is actually the class we are in now. With the AP curriculum, Software Engineering had turned into AP Computer Science Principles. After creating CSP, he moved on to AP Computer Science A, which is now taught by Mrs. Sangam and Mr. Holcomb. After those classes, he would create Introduction to Computer Science, which is now taught by one of the greatest teachers of all time, Mrs. Wheaton. In Robotics, he personally created the curicculum for your class. Every year he gets funding for these classes, and recruits kids. Every year, he creates a new curicullum and a new class. In fact, this is the only year where he did not create a new class. He tried to create a new unit for Digital Engineering, but that failed badly. All in all, we should be thankful for Mr. Millard for being the modern-day father of the American High School Computer Science and Engineering Program. </p>
-<h2>
-    Life After American
-</h2>
-<p class = "p3"> Mr. Millard wants to work for three more years before he retires at the ripe age of 69. When he retires he wants to sleep for a few months, travel, and read books. He is a big fan of books with mgical realism. He reads Terry Pratchet, Douglas Adams, Phillip Pullman. He likes Ursilla Guin's "EarthSea" series. Hopefully Mr. Millard finds his happiness when he retires. </p>
+     
+<button onclick="showLife()">His Life</button>
+<p id="life"></p>
+
+<button onclick="showAHS()">The Creator of American High Computer Science Department</button>
+<p id="AHS"></p>
+
+<button onclick="showAfterLife()">Life After American</button>
+<p id="AfterLife"></p>
+
+<p class = "p3">  </p>
 </div>
 <footer>
     <h3>The Lawrence Millard Foundation<h3>
@@ -105,6 +92,20 @@
     <h3> W/Thu: 3:00 - 4:00</h3>
     <h3> Phone Number: (510) 796 - 1776 ext 57256</h3>
   </footer>
+
   
-    </body>
+<script>
+    function showLife() {
+      document.getElementById("life").innerHTML = "As a child, Mr. Milard was very sweet, and well-behaved. He loved to sing, but as he says it, 'not well'. He joked that 'he was told to insure his voice, but then a music lover went for his throat.' Mr. Millard's favorite song was 'Yesterday' by the beatles. Academically, he was a very good student. He experienced a bit of a bump in freshman year of high school, but then went back to being a good student. He loved science, especially astrophysics and geology (although he would never take these in college). He visited many countries, but his favorite visit was Italy. Mr. Millard is not a big sports fan, but he was a wrestler. He did not go proffessional (obviously, as he is with us now) and did not enjoy it very much. He was also a swimmer. Infact, he set the local record for backstroke. Mr. Millard does not like butterfly however. He said that 'the founder of butterfly made butterfly so that people could drown.' There were six kids in his household, five boys and one girl. He called them the quick and the hungry";
+    }
+
+    function showAHS() {
+        document.getElementById("AHS").innerHTML = "Mr. Millard originally was a chemistry teacher when he first began at American High School. However, he would come to hear that the students wanted a CS program. He convinced the board to teach engineering and started introduction to electronic design. IED which is taught by Mr. Lindsay now, would be the first class Mr. Millard would create for American High School. He would then move to a Digital Engineering class, and then to a class called Software Engineering. Fun Fact: Software Engineering is actually the class we are in now. With the AP curriculum, Software Engineering had turned into AP Computer Science Principles. After creating CSP, he moved on to AP Computer Science A, which is now taught by Mrs. Sangam and Mr. Holcomb. After those classes, he would create Introduction to Computer Science, which is now taught by one of the greatest teachers of all time, Mrs. Wheaton. In Robotics, he personally created the curicculum for your class. Every year he gets funding for these classes, and recruits kids. Every year, he creates a new curicullum and a new class. In fact, this is the only year where he did not create a new class. He tried to create a new unit for Digital Engineering, but that failed badly. All in all, we should be thankful for Mr. Millard for being the modern-day father of the American High School Computer Science and Engineering Program."    
+    }
+    function showAfterLife(){
+        document.getElementById("AfterLife").innerHTML = "Mr. Millard wants to work for three more years before he retires at the ripe age of 69. When he retires he wants to sleep for a few months, travel, and read books. He is a big fan of books with mgical realism. He reads Terry Pratchet, Douglas Adams, Phillip Pullman. He likes Ursilla Guin's 'EarthSea' series. Hopefully Mr. Millard finds his happiness when he retires."
+    }
+</script>
+
+</body>
 </html>
