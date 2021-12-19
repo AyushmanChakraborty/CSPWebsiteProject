@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+<style>  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    color: #080808;
+    background: linear-gradient(110deg, #9c23cc 30%, #38297c 100%);
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    min-width: 350px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 600%;
+    /* 300% 'caz we have 3 cards */
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.card{
+    width: 800px;
+    min-height: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.card-thumb{
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.client-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-name{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 20px;
+    background: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.card-body{
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.review{
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.rating{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.indicators{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicators button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+button.active{
+    width: 40px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 50%;
+        margin: auto;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .card-thumb{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <h1 style="position:absolute; top:10%; left:50%; transform: translateX(-50%); font-size: 50px; font-weight: bolder; color:white;">Student Testimonials</h1>
+
+    <div class="navbar">
+        <a href="Homepage.html">Home</a> 
+        <a href="biography.html">Biography</a> 
+        <a class="active" href="testimony.html">Testimonies</a> 
+        <a href="Quiz.html">Quiz</a>
+        <a href="shop.php">Store</a>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="https://pbs.twimg.com/profile_images/1339684299377954817/eajYP0ii_400x400.jpg" class="client-img" alt="">
+                    <span class="client-name">Anonymous Student</span>
+                </div>
+                <div class="card-body">
+                    <h1 class="review">"He is the homie"</h1>
+                    <div class="rating">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="https://static01.nyt.com/images/2021/07/28/us/28xp-arthur/28xp-arthur-mediumSquareAt3X.png" class="client-img" alt="">
+                    <span class="client-name">Anonymous Student</span>
+                </div>
+                <div class="card-body">
+                    <h1 class="review">"He is kind, generous, and understanding"</h1>
+                    <div class="rating">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/Features124/v4/1a/4b/33/1a4b3380-1ea1-7f02-fe10-b98e6da4d645/pr_source.png/375x375cc.webp" class="client-img" alt="">
+                    <span class="client-name">Anonymous Student</span>
+                </div>
+                <div class="card-body">
+                    <h1 class="review">"Mr. Millard is one of the most quirky teachers at AHS! Everyday when I see him, he brightens my day!"</h1>
+                    <div class="rating">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTToWfdUIuk_RFeVrFw2xm7hPKlUJCvhctaFa7NswBIrJrFqnhs2kejA6DMLQPMByVM84Q&usqp=CAU" class="client-img" alt="">
+                    <span class="client-name">Anonymous Student</span>
+                </div>
+                <div class="card-body">
+                    <h1 class="review">"Mr. Millard will always be remembered as an OG. His skills cannot be matched"</h1>
+                    <div class="rating">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="https://i.kym-cdn.com/photos/images/facebook/000/173/466/handsome_aang_by_llawlietdeathnote-d36iw7x.png" class="client-img" alt="">
+                    <span class="client-name">Anonymous Student</span>
+                </div>
+                <div class="card-body">
+                    <h1 class="review">"Mr. Millard always makes me smile and laugh and I look forward to his class"</h1>
+                    <div class="rating">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="https://hips.hearstapps.com/seventeen/assets/15/12/1426530706-xv29ppxk.jpeg" class="client-img" alt="">
+                    <span class="client-name">Anonymous Student</span>
+                </div>
+                <div class="card-body">
+                    <h1 class="review">"Mr. Millard makes me very happy, and I am thankful for all his hard work towards the AHS CS compartment"</h1>
+                    <div class="rating">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                        <img src="https://i.dlpng.com/static/png/6591511_preview.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

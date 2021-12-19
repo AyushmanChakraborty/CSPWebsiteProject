@@ -1,4 +1,3 @@
-
 function check(){
 
 	var question1 = document.quiz.question1.value;
@@ -57,5 +56,3 @@ function check(){
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
 
 	}
-  
-  
