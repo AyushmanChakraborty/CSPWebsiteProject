@@ -150,7 +150,7 @@ div.desc {
 		<a  href="biography.html">Biography</a> 
 		<a href="testimony.html">Testimonies</a> 
 		<a href="Quiz.html">Quiz</a>
-		<a class="active" href="shop.htm">Store</a>
+		<a class="active" href="shop.php">Store</a> 
 	  </div>
 
 	  <div class="header">
