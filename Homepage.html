@@ -21,7 +21,7 @@
     bottom: -680px;
     width: 100%;
     height: 28%;
-    background: midnightblue;
+    background: linear-gradient(110deg, #936bc9 10%, #150170 100%)
     }
 </style>
 
@@ -33,15 +33,16 @@
  
   <div class="navbar">
     <a class="active" href="Homepage.html">Home</a> 
-    <a href="Biography.html">Biography</a> 
-    <a href="Testimonies.html">Testimonies</a> 
-    <a href="Quiz">Quiz</a>
-    <a href="Store">Store</a>
+    <a href="biography.html">Biography</a>
+    <a href="testimony.html">Testimonies</a> 
+    <a href="Quiz.html">Quiz</a>
+    <a href="shop.htm">Store</a>
   </div>
  
   <div class="image">
-    <img id="img" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="click()" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.18169-9/544476_197052190409808_892482402_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=JPq1978xHCQAX9zgfLM&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_ATucwGT0DkyFWIJq-We4BFGmpo-wWkSVSidlfrzDZGw&oe=61DEFF57" 
-    style="position: absolute; height: 55%; top: 33%; left: 52%">
+    <a href="biography.html">
+      <img id="img" onmouseover="mouseOver()" onmouseout="mouseOut()" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.18169-9/544476_197052190409808_892482402_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=JPq1978xHCQAX9zgfLM&_nc_ht=scontent-sjc3-1.xx&oh=00_AT_ATucwGT0DkyFWIJq-We4BFGmpo-wWkSVSidlfrzDZGw&oe=61DEFF57" 
+      style="position: absolute; height: 55%; top: 33%; left: 52%"></a>
     <h2 style="position:absolute; top:50%; left:27%; width:30%; font-size:90px; transform: translate(-50%, -50%); color: white; font-family:franklin Gothic medium;">
       The Lawrence Millard Foundation
   </h2>
@@ -78,14 +79,12 @@
   function mouseOver() {
     document.getElementById("img").style.height = "63%";
   }
-  
   function mouseOut() {
     document.getElementById("img").style.height = "55%";
-  }
-  function click() {
-    location.href = "Biography.html";  
   }
 </script>
 </body>
 </html>
+
+
 
