@@ -1,45 +1,94 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-             .header {
-              padding: 60px;
-               text-align: center;
-                background: rgb(99, 131, 99);
-         color: white;
-       font-size: 30px;
-}
-        </style>
-        <meta charset="UTF-8">
-        <meta name="description" content="JS multiple choice quiz">
-        <title>JS Multiple Choice Quiz</title>
-    </head>
-    <body style="background-color:linen">
-        <Nav>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="biography.html">Biography</a></li>
-            <li><a href="studenttestimonies.html">Testimony</a></li>
-            <li><a class = "active" href="quiz">Quiz</a></li>
-            <li><a href="gallery">Gallery</a></li>
-            <li><a href="store">Store</a></li>
-            
-            </Nav>
-        <div class="header">
-            <h1>JavaScript Multiple Choice Quiz</h1>
-          </div>
-        
-        <script src="quizdatta.js"></script>
+<head>
+
+<title>Kevin's Kwiz!</title>
+<link href ="quiz.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "quiz.js"></script>
+<style>
+       .header {
+        padding: 80px;
+        text-align: center;
+        background: linear-gradient(110deg, #c067e4 20%, #61067c 80%);
+        color: white;
+        font-size: 50px;
+      }
+</style>
+
+</head>
 
 
-        <footer>
-            <h3>The Lawrence Millard Foundation<h3>
-            <h3> Room 501</h3>
-            <h3> M/T: 3:30 - 4:00</h3>
-            <h3> W/Thu: 3:00 - 4:00</h3>
-            <h3> Phone Number: (510) 796 - 1776 ext 57256</h3>
-          </footer>
-        
-    </body>
+<body>
+    <div class="navbar">
+        <a href="Homepage.html">Home</a> 
+        <a href="biography.html">Biography</a>
+        <a href="testimony.html">Testimonies</a> 
+        <a class="active" href="Quiz.html">Quiz</a>
+        <a href="shop.htm">Store</a>
+      </div>
+      <div class="header">
+        <h1>The Lawrence Millard Quiz</h1>
+      </div>
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">What is Mr. Millard's first name?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">What classes does Mr. Millard teach?</p>
+<input type = "radio" id = "mc" name = "question2" value = "DE"> DE and CSP<br>
+<input type = "radio" id = "mc" name = "question2" value = "APENG and APCALC"> APENG and APCALC<br>
+<input type = "radio" id = "mc" name = "question2" value = "CHEM and PHYSICS"> CHEM and PHYSICS<br>
+<input type = "radio" id = "mc" name = "question2" value = "IED and CSP"> IED and CSP<br>
+
+<p class = "questions">What is Mr. Millard's favorite food?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Samosa">Samosa <br>
+<input type = "radio" id = "mc" name = "question3" value = "Ramen">Ramen<br>
+<input type = "radio" id = "mc" name = "question3" value = "Steak"> Steak<br>
+<input type = "radio" id = "mc" name = "question3" value = "Noneoftheabove"> None of the above<br>
+
+<p class = "questions">What truck does Mr. Millard drive?</p>
+
+<input type = "radio" id = "mc" name = "question4" value = "Pink">Pink<br>
+<input type = "radio" id = "mc" name = "question4" value = "Black">Black<br>
+<input type = "radio" id = "mc" name = "question4" value = "Red"> Red<br>
+<input type = "radio" id = "mc" name = "question4" value = "NoTruck">He doesn't drive a truck<br>
+
+<p class = "questions">When will Mr. Millard retire?</p>
+
+<input type = "radio" id = "mc" name = "question5" value = "56">56<br>
+<input type = "radio" id = "mc" name = "question5" value = "81">81<br>
+<input type = "radio" id = "mc" name = "question5" value = "73">73<br>
+<input type = "radio" id = "mc" name = "question5" value = "69">69<br>
+
+<p class = "questions">Where was Mr. Millard born?</p>
+
+<input type = "radio" id = "mc" name = "question6" value = "Uzbekistan">Uzbekistan<br>
+<input type = "radio" id = "mc" name = "question6" value = "India">India<br>
+<input type = "radio" id = "mc" name = "question6" value = "California"> California<br>
+<input type = "radio" id = "mc" name = "question6" value = "Wisconsin"> Wisconsin<br>
+
+<p class = "questions">What is Mr. Millard's favorite song?</p>
+
+<input type = "radio" id = "mc" name = "question7" value = "'Yesterday' by The Beatles">'Yesterday' by The Beatles<br>
+<input type = "radio" id = "mc" name = "question7" value = "Beethoven's Fifth"> Beethoven's Fifth<br>
+<input type = "radio" id = "mc" name = "question7" value = "'Love Sosa'-Chief Keef">'Love Sosa' by Chief Keef<br>
+<input type = "radio" id = "mc" name = "question7" value = "'Miss the Rage' by Trippie Redd and Playboi Carti">'Miss the Rage' by Trippie Redd and Playboi Carti<br>
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+
+</div>
 </html>
+
+</body>
